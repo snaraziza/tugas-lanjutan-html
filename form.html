@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTFF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Registrasi Singkat</title>
+        <style>
+            body { font-family: 'Times New Roman', Times, serif; margin: 20px; }
+            form { max-width: 650px; }
+            fieldset { border: 1px solid black; margin-bottom: 20px; padding: 10px 15px 15px; }
+            legend { padding: 0 5px; }
+            table { border-collapse: collapse; }
+
+            th { text-align: left; width: 180px; font-weight: normal; vertical-align: top; padding: 4px 0; }
+            td { vertical-align: top; padding: 4x 0; }
+
+            /* mengatur kolom titik 2 */
+            td:first-of-type { width: 15px; text-align: center; }
+
+            .action-buttons { margin-top: 10px; }
+            .action-buttons input { padding: 3px 10px; margin-right: 5px; }
+        </style>
+    </head>
+    <body>
+
+        <h2>Form Registrasi</h2>
+
+        <form action="" method="post">
+
+            <fieldset>
+                <legend>Biodata</legend>
+                <table>
+                    <tr>
+                        <th>Nama Mahasiswa</th><td>:</td>
+                        <td><input type="text" name="nama" size="30" placeholder="Nama Anda"></td>
+                    </tr>
+                    <tr>
+                        <th>No Induk Mahasiswa (NIM)</th><td>:</td>
+                        <td><input type="text" name="nim" size="30" value="12345678"></td>
+                    </tr>
+                    <tr>
+                        <th>Alamat Mahasiswa</th><td>:</td>
+                        <td><textarea name="alamat" cols="40" rows="4" placeholder="Alamat Anda"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>Tanggal Lahir</th><td>:</td>
+                        <td>
+                            <select name="tgl"><option>01</option><option>02</option><option>03</option></select>
+                            <select name="bln"><option>Januari</option><option>Februari</option><option>Maret</option></select>
+                            <select name="thn"><option>1990</option><option>1991</option><option>1992</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th><td>:</td>
+                        <td>
+                            <input type="radio" name="jk" id="pria" value="pria" checked> <label for="pria">Pria</label>
+                            <input type="radio" name="jk" id="wanita" value="wanita" checked> <label for="wanita">Wanita</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Upload Foto</th><td>:</td>
+                        <td><input type="url" name="website" size="40" placeholder="URL Website Anda"></td>
+                    </tr>
+                    <tr>
+                        <th>Perguruan Tinggi</th><td>:</td>
+                        <td><input type="text" name="pt" size="20"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Info Akun</legend>
+                <table>
+                    <tr>
+                        <th>Email</th><td>:</td>
+                        <td><input type="email" name="email" size="30" placeholder="Email Anda"></td>
+                    </tr>
+                    <tr>
+                        <th>Username</th><td>:</td>
+                        <td><input type="text" name="username" size="30" placeholder="Username Anda"></td>
+                    </tr>
+                    <tr>
+                        <th>Password</th><td>:</td>
+                        <td><input type="password" name="password" size="30" placeholder="Password Ansa"></td>
+                    </tr>
+                    <tr>
+                        <th>Ulangi Password</th><td>:</td>
+                        <td><input type="password" name="password" size="30" placeholder="Password Anda"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Kemampuan Dasar</legend>
+                <input type="checkbox" name="skill[]" id="html" value="HTML"> <label for="html">HTML</label> &nbsp;
+                <input type="checkbox" name="skill[]" id="css" value="CSS"> <label form="css">CSS</label> &nbsp;
+                <input type="checkbox" name="skill[]" id="Javascript" value="Javascript"> <label form="Javascript">Javascript</label> &nbsp;
+                <input type="checkbox" name="skill[]" id="php" value="PHP"> <label for="php">PHP</label> &nbsp;
+                <input type="checkbox" name="skill[]" id="mysql" value="MySQL"> <label form="mysql">MySQL</label> &nbsp;
+                <input type="checkbox" name="skill[]" id="laravel" value="Laravel"> <label form="laravel">Laravel</label> &nbsp;
+                <input type="react" name="React Native" id="react" value="React Native"> <label form="react">React Native</label> &nbsp;
+            </fieldset>
+
+            <div class="action-buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+                <input type="button" value="Button">
+            </div>
+
+        </form>
+        
+    </body>
+
+</html>
